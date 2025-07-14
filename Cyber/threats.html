@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cyber Threats</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f0f8ff, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background-color: #0055aa;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    .nav-boxes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .nav-box {
+      background: #0080ff;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      transition: 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0,128,255,0.3);
+    }
+
+    .nav-box:hover {
+      background: #005bb5;
+      transform: translateY(-2px);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    section {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    }
+
+  .card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px; /* 40px vertical gap, 20px horizontal */
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+    .card {
+      width: 220px;
+      height: 220px;
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      backface-visibility: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card-front {
+      background-color: #0077cc;
+      color: white;
+    }
+
+    .card-back {
+      background-color: #f0f8ff;
+      color: #333;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⚠️ Cyber Threats</h1>
+  </header>
+
+  <nav class="nav-boxes">
+    <a href="index.html" class="nav-box">Home</a>
+    <a href="about.html" class="nav-box">About</a>
+    <a href="passwords.html" class="nav-box">Password Tips</a>
+    <a href="quiz.html" class="nav-box">Quiz</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Hover to Learn About Threats 👀</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">🎣 Phishing</div>
+            <div class="card-back">
+Phishing is the practice of sending fraudulent communications that appear to come from a legitimate and reputable source, usually through email and text messaging.            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">💣 Ransomware</div>
+            <div class="card-back">
+              A type of malware that locks or encrypts your files and demands payment to unlock them.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">🦠 Malware</div>
+            <div class="card-back">
+              Malicious software designed to harm your device, steal information, or gain unauthorized access.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">👁️ Spyware</div>
+            <div class="card-back">
+              Software that secretly monitors your activity and collects sensitive information without consent.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">🌐 DDoS Attack</div>
+            <div class="card-back">
+DDoS Attack means "Distributed Denial-of-Service (DDoS) Attack" and it is a cybercrime in which the attacker floods a server with internet traffic to prevent users from accessing connected online services and sites            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

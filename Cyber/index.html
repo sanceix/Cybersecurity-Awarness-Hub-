@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cybersecurity Awareness Home</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+ 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f0f8ff, #ffffff);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #0055aa;
+      padding: 25px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 128, 255, 0.15);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      background-color: #e6f0ff;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #0055aa;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: #f0f0f0;
+      padding: 15px;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🔐 Cybersecurity Awareness Hub</h1>
+  </header>
+
+  <main>
+    <h2 style="text-align: center; font-size: 2rem; color: #0055aa;">Explore Topics</h2>
+
+    <div class="grid">
+      <a href="about.html" class="card">
+        <h2>📘 About Cybersecurity</h2>
+        <p>Understand the basics of cybersecurity and why it matters to everyone in the digital age.</p>
+      </a>
+      <a href="passwords.html" class="card">
+        <h2>🔐 Password Tips</h2>
+        <p>Learn how to create strong passwords and keep your accounts secure.</p>
+      </a>
+      <a href="threats.html" class="card">
+        <h2>⚠️ Cyber Threats</h2>
+        <p>Discover common cyber threats like phishing, malware, and ransomware.</p>
+      </a>
+      <a href="quiz.html" class="card">
+        <h2>🧠 Take the Quiz</h2>
+        <p>Test your knowledge and see how cyber-aware you are!</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Cyber Awareness | Built for educational purposes
+  </footer>
+
+</body>
+</html>
